@@ -1,0 +1,157 @@
+body {
+    background-color: #1c1c1c;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1%;
+}
+
+.logo {
+    padding-left: 2%;
+}
+
+.menu {
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 2%;
+}
+
+.menuItem {
+    padding: 5px;
+    margin: 0px 25px;
+    font-family:'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 45px;
+    color: #e6f0ee;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 0px 25px;
+    font-family:'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 45px;
+    color: #1c1c1c;
+    background-color: #e6f0ee;
+    border-radius: 10px;
+}
+
+#hero {
+    display: flex;
+    margin: 50px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+    width: 1000px;
+    height: 500px;
+}
+
+#heroImage {
+    display: flex;
+    margin: 0px 50px;
+    width: 800px;
+    height: 800px;
+}
+
+.headline {
+    font-family:'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    text-align: center;
+    background: linear-gradient(#80ed99, #57cc99, #38a3a5, #22577a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block
+}
+
+.subhead {
+    font-family:'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    text-align: center;
+    color: #e6f0ee;
+}
+
+#work {
+    display: grid;
+    grid-template-areas:
+    'Guidewalk Zelt'
+    'USDA TWAS';
+    margin: 50px 150px;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.workCard {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 650px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.workTitle {
+    align-items: flex-start;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 48px; 
+    color: #e6f0ee;
+}
+
+#guidewalkCard {
+    grid-area: Guidewalk;
+}
+
+#zeltCard {
+    grid-area: Zelt;
+}
+
+#usdaCard {
+    grid-area: USDA;
+}
+
+#twasCard {
+    grid-area: TWAS;
+}
+
+.body {
+    font-family:'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 36px; 
+    color: #e6f0ee;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.socialsItem {
+    margin: 0px 20px;
+    max-width: 80px;
+    max-height: 80px;
+}
