@@ -105,8 +105,9 @@ button {
 .workCard {
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: 650px;
+    width: auto;
+    height: auto;
+    overflow: auto;
     justify-content: center;
     padding: 10px;
 }
