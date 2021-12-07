@@ -50,9 +50,10 @@ body {
     padding: 10px;
     margin: 0px 25px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #80ed99, #57cc99, #38a3a5, #22577a);
-    background-size: 600%;
-    animation: slide 5s infinite;
+    background: linear-gradient(to bottom right, #80ed99, #57cc99, #38a3a5, #22577a);
+    background-size: 400%;
+    animation: slide 16s linear infinite;
+    animation: growShrink 8s linear infinite;
 }
 
 @keyframes slide {
@@ -60,20 +61,26 @@ body {
         background-position: left;
     }
 
-    25% {
-        background-position: center;
-    }
-
     50% {
         background-position: right;
     }
 
-    75% {
-        background-position: center;
+    100% {
+        background-position: left;
+    }
+}
+
+@keyframes growShrink {
+    0% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(1.2,1.2);
     }
 
     100% {
-        background-position: left;
+        transform: scale(1,1);
     }
 }
 
