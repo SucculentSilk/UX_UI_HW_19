@@ -52,8 +52,10 @@ body {
     border-radius: 10px;
     background: linear-gradient(to bottom right, #80ed99, #57cc99, #38a3a5, #22577a);
     background-size: 400%;
-    animation: slide 16s linear infinite;
-    animation: growShrink 8s linear infinite;
+    animation: slide, growShrink;
+    animation-duration: 16s, 8s;
+    animation-iteration-count: infinite, infinite;
+    animation-timing-function: linear, linear;
 }
 
 @keyframes slide {
